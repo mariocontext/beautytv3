@@ -157,17 +157,23 @@ html, body {
 
 
 #container {
-	width: 720px;
+
 }
 
 #content {
-	width: 710px;
+	width: 740px;
 }
 
 /* primary sidebar */
 #primary {
 	
-	width: 200px;
+	width: 210px;
+}
+
+.main-aside {
+
+	right: 0px; /* overrides parent theme layout */
+
 }
 
 #footer {
