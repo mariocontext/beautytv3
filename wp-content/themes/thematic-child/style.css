@@ -224,7 +224,7 @@ html, body {
 	border-left-color: #666;	
 }
 
-#access ul li.first {
+#access ul li:first-child {
 	border-left-style: none;
 }
 
