@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name: Beauty TV Mod
+Theme URI: http://beautytve.me/thematic-child
+Description: Child Theme for Thematic
+Author: Mario Noble
+Author URI: http://marionobledesign.com
+Template: thematic
+Version: 0.1
+*/
+
+
+ 
+@import url("../thematic/style.css");
+
+html, body {
+	/* change font family */
+	font-family: Arial, Helvetica, sans-serif;
+	
+	/* overall background color - won't show up if you're using an image - may not work depending on the design */
+	/* customize_body */ /* customize_body */
+	
+	/* overall font color */
+	/* customize_body */  /* customize_body */
+	
+	/*overall background image */
+	background-color:#333;
+	
+}
+#wrapper {
+	width:1000px;
+	margin:0 auto;
+	color:#FFF;
+}
+
+#main {
+	
+}
+
+#wrapper a:link, #wrapper a:visited {
+	/* customize_link */ color: #FFF; /* customize_link */
+	text-decoration:underline;
+}
+
+#wrapper a:hover, #wrapper a:active, #wrapper a:focus {
+	/* customize_link_hover */ color: #900; /* customize_link_hover */
+	text-decoration:underline;
+}
+
+#wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4, #wrapper h5{ 
+	margin:0;
+	font-weight:700;
+	/* customize_misc */ color: #FFF; /* customize_misc */
+	/* customize_misc */  /* customize_misc */
+}
+
+
+#wrapper p, #wrapper td p { 
+	font-size:1em; /* used in conjuction with body size in main.css - best overall fix for most browsers. please stick with em's instead of pixels since it's more accessible*/
+        font-weight:100;  
+}
+
+#wrapper strong {
+	font-weight:700; /* equivalent to bold, but better */
+}
+
+#wrapper h1 {
+	font-size:1.65em; /* experiment and see what works best */
+	padding:3px 0px 3px 0px; /* adds a bit of space and can also give some breathing room for background images */
+	margin-bottom:10px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #900;
+}
+
+#wrapper h2 {  
+	font-size:1.4em; 
+	padding:5px 0px 5px 0px;
+	margin:0px 0px 5px 0px;
+	position:relative;
+	left:0px;
+}
+
+#wrapper h3 {  
+	font-size:1.3em; 
+	padding:3px 0px 0px 3px;
+}
+
+#wrapper h4 {  
+	font-size:1.1em; 
+	padding:5px 0px 5px 10px;
+}
+
+#wrapper ul.nav li {
+	/* this can be removed if you don't want separators between nav list elements */
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	border-bottom-color: #630;
+}
+
+#wrapper input, #container select, #container textarea {
+	background-color:#FFF !important; /* overrides google toolbar's auto background coloring of common form elements - change to a custom color*/
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #333;
+}
+
+#wrapper img {
+	border: 0px; /* IE fix - since it sometimes draws border around linked images where you don't want them */
+}
+
+#wrapper {
+    width:100%;	
+}
+
+#branding {
+  	background-image:url(images/headerBGv4.jpg);
+  	background-repeat: no-repeat;
+	background-position: -50px 0px;
+	height:175px;
+	margin:0 auto;
+	padding:0px;
+}
+
+#header {
+	width:100%;
+	background-color:#000;
+	margin:0 auto;
+	border:none;
+	height:220px;
+}
+
+
+#header-image {
+ 	background:url("images/beautytv_logo_082013.png") no-repeat transparent;
+	position:relative;
+	width: 230px;
+	height: 69px;
+	top:115px;
+	left:350px;
+	cursor: pointer;
+	display: block;
+ 
+}
+
+#access {
+	border:none;
+	background-image:url(images/navBG.jpg);
+  	background-repeat: repeat-x;
+	background-position: left 0px;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, .sf-menu ul a {
+	background:none;	
+} /* needed to go to original to kill */
+
+
+#container {
+	width: 720px;
+}
+
+#content {
+	width: 710px;
+}
+
+/* primary sidebar */
+#primary {
+	
+	width: 200px;
+}
+
+#footer {
+	border:none;
+	background-color:#1C1B20;
+	background-image: url(images/footerBGrepeat.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height:250px;
+
+}
+
+#siteinfo {
+	height:184px;
+	border:none;
+	background-image: url(images/footerBG.jpg);
+	background-repeat: no-repeat;
+	background-position: -140px top;
+	text-align:left;
+	color:#FFF;
+}
+
+
+#access {
+	position:relative;
+	top:15px
+}
+
+#access ul {
+	margin:0 auto;
+	border:none;
+	font-size:1.1em;
+	list-style:none;
+	position:relative;
+	top:8px
+}
+
+#access ul li {
+	display:inline;
+	position:relative;
+	top:3px;
+}
+
+#access ul li {
+	padding: 2px 20px 0px 20px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #666;	
+}
+
+#access ul li.first {
+	border-left-style: none;
+}
+
+#access a {
+	text-decoration:none;
+	background-position: left top;
+	font-size:1.2em;
+	font-weight:700;
+}
+
+#access a:link, #access a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#access a:hover, #access a:active, #access a:focus {
+	color:#900;
+	text-decoration:none;
+}
+
+#primary {
+	border:none;	
+}
+
+
+
+/*container Elements */
+
+#container, #wrapper  { /* added to wrap as well because Blog page inserts whitespace on bottom of page*/
+	background-color:#333;
+	color:#FFF;
+}
+
+/* turn offs */
+
+#blog-title, #blog-description {
+	display:none;
+	visibility:hidden;
+}
+
+
+
+

@@ -1,0 +1,803 @@
+/*
+Theme Name:     Foxy Child
+Theme URI:      http://contextmultimedia.com/
+Description:    Extended Child theme for the Foxy theme 
+Author:         Mario Noble
+Author URI:     http://contextmultimedia.com/
+Template:       Foxy
+Version:        0.1.0
+*/
+/* This child theme is based off the Foxy Theme. http://www.elegantthemes.com/gallery/foxy/
+. 
+
+The scss files are located one directory below in the source_stylesheets folder. We use the Scout app to compile for OSX and Windows PC.
+
+To learn how to use SASS visit: http://sass-lang.com/
+
+*/
+@import url("../Foxy/style.css");
+
+/* general overall custom child styling overrides for all layouts */
+
+/* tags */
+
+body {
+
+    background: url(images/site-image/background.gif) #3f9ea8;
+    color: #2c2c2c;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
+}
+
+
+h1 { 
+  padding: 14px 0px;
+}
+
+h2, h3, h4, h5, h6 {
+  padding: 20px 0px;
+  color: #066;
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
+strong { 
+  color: #878787; 
+}
+
+a { 
+  color: #ff7100; 
+}
+
+/* header styles */
+
+header #slogan {
+
+  font-size: 14px;
+  font-style: normal;
+  color: #399;
+  padding-top: 5px;
+  display: block;
+  clear: both;
+
+}
+
+
+header #lang_sel {
+  display: none;
+  clear: both;
+}
+
+
+#lang_sel a, #lang_sel a:visited {
+
+  font-size: 18px;
+  line-height: 32px;
+
+}
+
+#lang_sel li {
+
+  width: 150px;
+
+}
+
+#lang_sel_footer ul li a, #lang_sel_footer ul li a:visited {
+
+  font-size: 18px;
+
+}
+
+header .contact_no {
+  clear:both;
+  font-size: 20px;
+  color: #666;
+  line-height: 21px;
+  text-align: center;
+  font-weight: 400;
+  background: url(images/site-image/contact_img.gif) no-repeat right 62px;
+}
+
+header .contact_no span {
+font-size: 30px;
+font-weight: 400;
+color: #333;
+line-height: 50px;
+padding-top: 2px;
+
+
+}
+
+header .contact_no span a {
+  color: #333;
+}
+
+
+#body-area #content a, 
+html body #lang_sel_footer a { 
+  color: #ff7100 !important ; } /* override of inline css */
+
+/* navigation */
+
+#body-area #top-navigation a { 
+  color: #FFF !important; 
+} /* Foxy theme function override of inline css */
+
+#menu-custom-menu > li:first-child > a:first-child, #menu-custom-menu_es > li:first-child > a:first-child { 
+  padding-left: 8px; 
+}
+
+#menu-custom-menu, 
+#menu-custom-menu ul li, 
+#menu-custom-menu_es, 
+#menu-custom-menu_es ul li { 
+  background-color: #333;
+}
+
+.nav li ul, .et_mobile_menu {
+
+
+}
+
+.nav li ul, .nav li li { 
+  border: none; 
+}
+
+span.menu_slide, span.main_text { padding: 14px 14px; }
+
+.slide-container img {
+
+  width: 100% !important; /* important is for IE 8 */
+
+}
+
+#breadcrumbs {
+
+  line-height: 1.5em;
+
+}
+
+/* content */
+
+#body-area {
+background: url(images/splash.png) no-repeat 50% 0;
+}
+
+#body-area > .container {
+
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+
+}
+
+#left-area img {
+
+  margin: 10px 0px;
+
+}
+
+#left-area h1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: -4px;
+}
+
+#left-area h2, #left-area h3 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+  clear: both;
+}
+
+.page .post-heading h1 {
+  display: none;
+}
+
+/* sidebar */
+
+#sidebar h2, h3, h4 {
+
+  padding: 25px 0px;
+
+}
+
+#sidebar .sidebar-header{
+
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #066;
+
+}
+
+#sidebar .widget {
+
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+  padding: 10px;
+
+}
+
+#body-area #sidebar .widget ul li {
+    border-bottom: none;
+    display: block;
+    padding: 16px 30px 16px 62px;
+    transition: none;
+}
+
+#sidebar .widget ul li:hover {
+
+    padding-left: 62px !important;
+    background: url(images/sidebar-bullet.png) no-repeat 40px 19px;
+
+}
+
+#sidebar .widget .logo_share {
+
+    margin: 0 auto;
+    width: 120px;
+
+}
+
+/* sidebar contact styling */
+
+#sidebar .dv_getstart {
+color:#FFF;
+-moz-box-shadow: 0 0 5px 5px #CCC;
+-webkit-box-shadow: 0 0 5px 5px #CCC;
+box-shadow: 0 0 5px 5px #CCC;
+border: 10px solid #FFF;
+margin: 0 auto;
+width: 200px;
+background: #429498;
+padding: 11px 10px 0 11px;
+}
+#sidebar .wpcf7-form .inner_getstart {
+
+}
+
+#sidebar .wpcf7-form .ttl_getstart {
+font-size: 24px;
+padding: 20px 0;
+text-align: center;
+}
+
+#sidebar .wpcf7-form input, #sidebar .wpcf7-form .cont_getstart {
+width: 170px;
+padding-left: 5px;
+
+}
+
+
+#sidebar .wpcf7-form input { 
+  margin-left: 0px; 
+  font-size: 16px; 
+}
+
+#sidebar .wpcf7-form .cont_getstart { 
+  margin-left: 5px; 
+  font-size: 14px; 
+}
+
+/* general contact styling */
+
+#sidebar .btn_start {
+  color: #429498;
+}
+
+.btn_start {
+
+  width: 91px;
+  height: 35px;
+  padding: 0;
+  margin: 20px 0px;
+  cursor: pointer;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #ffc00e;
+  background: url(images/site-image/btn_submit.png) no-repeat left top;
+  border: none;
+  vertical-align: top;
+  outline: none;
+
+}
+
+.wpcf7-form .txt_startarea {
+  height: 60px;
+  padding: 8px 0 8px 8px;
+  overflow: auto;
+  margin-bottom: 0;
+  width: 170px;
+  font-size:14px;
+}
+
+.img_captcha {
+width: 90px;
+height: 29px;
+background: #e3e3e3;
+margin-top: 10px;
+vertical-align: middle;
+}
+
+.txt_sidecaptcha {
+width: 100px;
+}
+
+#left-area .txt_captcha {
+
+  width: 120px;
+
+}
+
+.wpcf7-form input, .wpcf7-form textarea, .wpcf7-form select {
+
+font-size: 20px ;
+
+}
+
+#sidebar div.wpcf7-response-output {
+
+    font-size: 14px;
+    padding: 40px 0px;
+    display: block;
+}
+
+#sidebar span.wpcf7-not-valid-tip {
+
+    font-size: 14px;
+    padding: 0px 0px 20px;
+    display: block;
+
+}
+
+#left-area div.wpcf7-response-output {
+
+    font-size: 14px;
+    padding: 40px 0px;
+    display: block;
+    clear:both;
+    float: left;
+}
+
+#left-area span.wpcf7-not-valid-tip {
+
+    font-size: 14px;
+    padding: 0px 0px 20px;
+    display: block;
+    clear: both;
+
+}
+
+
+
+
+
+/* footer */
+
+#add-this-bar { 
+
+  padding-bottom: 30px; 
+  display: none; /* temp fix because it's expanding the overall container */
+}
+
+.addthis_toolbox {
+
+  padding: 0px 0px 40px 60px;
+
+}
+
+#footer-area {
+    border-top: none;
+    box-shadow: none;
+}
+
+#footer-bottom { 
+  background-color: #595959; 
+  border-top: none;
+}
+
+#footer-bottom li a { color: #FFF; }
+
+#footer-bottom-area a { 
+  text-decoration: underline;
+  color: #fff; 
+}
+
+#footer-bottom-area { 
+
+  color: #FFF;
+  font-size: 10px;
+  padding: 10px 0px;
+}
+
+#basic-copyright { text-align: right; }
+
+/* table styling */
+
+#content .graft-details tr th {
+
+background: #429498;
+color: #FFF;
+
+}
+
+/* table fixes using tableizer.js */
+  /* default table styling in primary page area. applies to all tables. may be too greedy and you may want to limit it by changing the css and the invoking function in scripts.js to only target a table with a specific class if there are too many conflicts with plugins that use tables in this area */
+
+  .stacktable {
+    width: 100%;
+  }
+
+
+  .st-head-row {
+    padding-top: 1em;
+  }
+
+
+  .st-head-row.st-head-row-main {
+    font-size: 1.5em;
+    padding-top: 0;
+  }
+
+
+  .st-key {
+    text-align: left;
+    padding-right: 1%;
+  }
+
+
+  .st-val {
+    padding-left: 1%;
+  }
+
+
+  .mobilized-table table {
+    display: none;
+  }
+
+
+  .mobilized-table .stacktable.small-only {
+    display: table;
+  }
+
+
+  .lt-ie8 #primary table {
+    display: block;
+  }
+
+/* small screen quick jump buttons */
+
+.small-screen-quick-jump-buttons {
+
+  clear: both;
+
+}
+
+.small-screen-quick-jump-buttons a.big-button {
+font-weight: normal !important;
+font-size: 20px;
+padding: 14px 0px;
+margin: 8px 6px 8px 0;
+width: 100%;
+text-align: center;
+color:#FFF !important;
+text-decoration: none !important;
+}
+
+
+.page-id-57 .fluid-width-video-wrapper {
+
+      clear: both; /* clears map from blocking contact form validation errors */
+
+  }
+
+/* small general ie fixes */
+
+.ie8 .ngg-gallery-thumbnail img {
+  max-width: inherit;
+}
+
+
+
+@media screen and (max-width: 479px) {
+
+  /* override of Foxy */
+  .post-heading h1, 
+  h1#comments, 
+  #reply-title, 
+  h1.category-title { 
+    font-size: 30px;
+  }
+
+  .wp-image-580 {
+
+    display:none;
+
+  }
+
+  header .other_slider, #wooslider-id-1 {
+  
+  display: none;
+
+  }
+
+  #body-area .addthis_toolbox {
+
+  padding: 20px 0px 20px 10px;
+
+  }
+
+
+} /* close max-width 479 */
+
+@media screen and (min-width: 525px) {
+
+
+
+
+} /* close min 525 */
+
+/* apply styling to elements under 600px in device width */
+@media screen and (max-width: 599px) {
+
+  .wooslider-direction-nav {
+    
+    display:none;
+
+  }
+
+  .addthis_toolbox {
+
+  padding: 20px 20px 20px 20px;
+
+  }
+
+} /* close max width 599 */
+
+
+/* apply styling to elements 600px and over in device width */
+@media screen and (min-width: 600px) {
+
+
+    /* defaults videos to 480 x 320 in the main content area for desktop-like environments. this can be changed or overwritten if needed to be larger or smaller or removed to scale to fill the entire parent container 
+    #body-area #content .fluid-width-video-wrapper {
+      width: 480px;
+      height: 320px;
+      padding-top: 0px;
+    }
+
+    */
+
+  #primary-header-info {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  #secondary-header-info {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+
+    #colophon {
+      /* adds more clickable space */
+    }
+
+    #colophon .icon-caret-up, #colophon .icon-sitemap {
+      display: none;
+    }
+
+    #colophon .general-button {
+      margin: 20px 0px;
+      margin:  1.429rem 0px;
+    }
+
+  
+
+  /* woo slider tweaks - found on homepage */
+
+  #body-area .wooslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: none;
+  position: relative;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  zoom: 1;
+  }
+
+
+  .small-screen-quick-jump-buttons {
+    display: none;
+  }
+
+
+} /* close min width 600 */
+
+
+/* mobile nav appears below to this point */
+@media only screen and ( max-width: 767px ) {
+
+    /* contact form 7 tweaks - comment out if you do not use this plugin */
+  /* styles form elements to stretch across entire space as opposed to breaking out of display area */
+
+  /* removes extraneous arrow in mobile nav */
+  .sf-sub-indicator {
+      
+      display: none;
+
+  }
+  
+  #body-area .wpcf7-form-control {
+
+    width: 100%;
+
+  }
+
+  .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form select {
+      width: 100%;
+
+  }
+
+  #body-area .wpcf7-form-control.wpcf7-submit {
+    font-size: 18px;
+    /* font-size: 1.286rem; */
+    padding: 14px 20px;
+    /* padding:  1rem 0; */
+  }
+
+
+  #body-area .wpcf7-form-control.wpcf7-captchac {
+    width: 72px;
+    /* causes image not to stretch */ 
+  }
+
+
+
+  #add-this-bar { display: none; }
+
+  .addthis_toolbox {
+
+  padding: 0px 0px 40px 60px;
+
+  }
+
+} /* close max width 767 */
+
+@media only screen and ( min-width: 768px ) {
+
+    #left-area img {
+
+      margin: 10px 20px;
+
+    }
+
+
+    #primary-header-info {
+      float: left;
+    }
+
+    header #lang_sel {
+      display: block;
+      clear: both;
+      float:right;
+    }
+
+    #lang_sel ul ul {
+
+      top: 35px;
+
+    }
+
+
+    #secondary-header-info {
+      float: right;
+
+    }
+
+    header .contact_no {
+      text-align: right;
+    }
+
+    #body-area .wooslider {
+
+    margin: 0px 20px 60px 20px;
+
+    }
+
+  .fluid-width-video-wrapper iframe[src^='https://maps.google.com'] {
+
+      width: 500px;
+      clear: both;
+
+  }
+
+    h1 {
+    font-size: 60px;
+    }
+
+} /* close min width 768 */
+
+@media screen and (min-width: 800px) {
+
+  #body-area { padding-top: 40px; }
+
+
+  /* stacktable styling */
+
+  #left-area table {
+    display: table;
+  }
+
+  
+  #left-area table.stacktable.small-only {
+    display: none;
+  }
+  
+
+  .st-key {
+    width: 49%;
+    text-align: right;
+    padding-right: 1%;
+  }
+
+  .st-val {
+    width: 49%;
+    padding-left: 1%;
+  }
+
+} /* close min width 800 */
+
+@media only screen and (max-width: 960px) {
+
+    #sidebar { display: none; }
+
+}
+
+
+@media only screen and (min-width: 961px) {
+
+  #main-header {
+    padding: 40px 30px;
+  }
+
+  #top-navigation {
+    width: 100%;
+  }
+
+/*
+  #menu-custom-menu {
+    padding: 0px 0px 0px 25px;
+  }
+  */
+
+
+  #menu-custom-menu {
+  margin:0;
+  padding:0;
+  text-align:center;
+  }
+  #menu-custom-menu > li {
+  display:inline-block;
+  text-align: left;
+  }
+  #menu-custom-menu > a {
+  display:inline-block;
+  padding:10px;
+  }
+
+
+} /* close min width 961 and old max width 1300 */
