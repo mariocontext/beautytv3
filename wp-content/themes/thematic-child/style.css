@@ -45,7 +45,7 @@ html, body {
 }
 
 #wrapper a:hover, #wrapper a:active, #wrapper a:focus {
-	/* customize_link_hover */ color: #900; /* customize_link_hover */
+	/* customize_link_hover */ color: #EF4035; /* customize_link_hover */
 	text-decoration:underline;
 }
 
@@ -58,7 +58,7 @@ html, body {
 
 
 #wrapper p, #wrapper td p { 
-	font-size:1em; /* used in conjuction with body size in main.css - best overall fix for most browsers. please stick with em's instead of pixels since it's more accessible*/
+	font-size:1.2em; /* used in conjuction with body size in main.css - best overall fix for most browsers. please stick with em's instead of pixels since it's more accessible*/
         font-weight:100;  
 }
 
@@ -68,24 +68,24 @@ html, body {
 
 #wrapper h1 {
 	font-size:1.65em; /* experiment and see what works best */
-	padding:3px 0px 3px 0px; /* adds a bit of space and can also give some breathing room for background images */
-	margin-bottom:10px;
+	padding:3px 0px 5px 0px; /* adds a bit of space and can also give some breathing room for background images */
+	margin-bottom:15px;
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
-	border-bottom-color: #900;
+	border-bottom-color: #EF4035;
 }
 
 #wrapper h2 {  
 	font-size:1.4em; 
 	padding:5px 0px 5px 0px;
-	margin:0px 0px 5px 0px;
+	margin:0px 0px 15px 0px;
 	position:relative;
 	left:0px;
 }
 
 #wrapper h3 {  
 	font-size:1.3em; 
-	padding:3px 0px 0px 3px;
+	padding:3px 0px 10px 3px;
 }
 
 #wrapper h4 {  
@@ -164,10 +164,20 @@ html, body {
 	width: 740px;
 }
 
+#content img {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
 /* primary sidebar */
 #primary {
 	
 	width: 210px;
+}
+
+#primary ul {
+	list-style: none !important;
 }
 
 .main-aside {
@@ -175,6 +185,12 @@ html, body {
 	right: 0px; /* overrides parent theme layout */
 
 }
+
+#primary ul li {
+	padding: 5px 0 !important;
+}
+
+
 
 #footer {
 	border:none;
@@ -249,7 +265,7 @@ html, body {
 }
 
 #access a:hover, #access a:active, #access a:focus {
-	color:#900;
+	color:#EF4035;
 	text-decoration:none;
 }
 
