@@ -186,6 +186,14 @@ html, body {
 
 }
 
+
+#footer #footer-links a {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 20px 20px 20px 0;
+	display: inline-block;
+}
+
 #siteinfo {
 	height:184px;
 	border:none;
@@ -252,6 +260,8 @@ html, body {
 
 /* applied class styles */
 
+	/* moves thumbs into place next to each other */
+
 ul.thumblisting {
 	list-style: none;
 	margin: 0;
@@ -269,6 +279,13 @@ ul.thumblisting li img {
 	display: block;
 	height: 93px;
 	
+}
+
+/* moved divs that are only composed of images next to each other */
+
+.image-rows img {
+	float:left;
+	padding: 10px 20px;
 }
 
 
