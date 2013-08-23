@@ -250,6 +250,27 @@ html, body {
 }
 
 
+/* applied class styles */
+
+ul.thumblisting {
+	list-style: none;
+	margin: 0;
+
+}
+
+ul.thumblisting li {
+
+	padding: 0 10px ;
+	float: left;
+}
+
+ul.thumblisting li img {
+	padding-top: 10px;
+	display: block;
+	height: 93px;
+	
+}
+
 
 /*container Elements */
 
